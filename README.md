@@ -1,7 +1,8 @@
-# Mission Files
+# Mission Files 
+### Version 1.0.0
 ## A mission file is a configuration for a robot controlling software , it defines the execution order and additional properties for example waypoints.
 ### The mission file is composed of a header, a body and a end.
-  
+
   
 ### Header 
 #### The Header contains some configuration for example the name.
@@ -9,7 +10,9 @@
 
 
    `HEADER`  
-    `mission:true`       
+    `mission:true` This is a mission file
+    `version:1.0.0` Version of the misson file
+    `mf_version:1.0.0` Version of this readme definition
     `name: "Example"`      
     `author: "Example"`     
     `license: "none"`  
@@ -44,10 +47,13 @@
 #### The Body section is marked with a `BODY`.     
 ##### Type 1
     `BODY`     
-    `url:url` The Url where the real Body is stored.     
+    `url:example.com/example.steps` The Url where the real Body is stored.     
 ##### Type 2
     `BODY`    
-    `{}`       
+    `{}`  
+##### Type 3
+    `BODY`
+    `file:example.steps`
 #### Here are some lines for your BODY that might be usefull (in waypoint files) :
     `{"type":"sleep","time":"4s"}`
 ### End
@@ -60,3 +66,7 @@
    `collision` The device (for example a drone) collided with something.
    `manual-off` The device was turned of by a human
    `battery-off` The battery failed or is empty
+## .step
+### Step files contain only a Body and a Error section, they cant be run so they have to be called by a mission file in the body or end part.
+`{"run":"example.com/example.steps"}` | `{"run":"example.steps"}`
+
