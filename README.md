@@ -23,10 +23,10 @@
       - steps | The Body defines steps to execute for example `{"steps":[{"type":"fly","velocity":[0,0,0]}]}`
       - events-steps | advanced version of the steps parameter allows the device to react do events for example {"events":[{name:"battery-low",run:"example.steps"}]} 
 #### Events that you should send if you are a developer of a robot controlling software that uses this file format
-        - battery-low
-        - collision-with-obj
-        - turned-on
-        - manual-off        
+- battery-low
+- collision-with-obj
+- turned-on
+- manual-off        
     `supported-devices:`
     ` - 'example-robot'`
     ` - 'another example robot'`
