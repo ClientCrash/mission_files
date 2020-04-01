@@ -62,10 +62,10 @@
 #### The error section is a Yaml block that defines what to do if the connection is lost or something bad happens
   `connection-lost:"example.mission"`
 #### Exceptions that you should send if you are a developer of a robot controlling software that uses this file format
-   `connection-lost` The connection to the device was lost
-   `collision` The device (for example a drone) collided with something.
-   `manual-off` The device was turned of by a human
-   `battery-off` The battery failed or is empty
+   `connection-lost` The connection to the device was lost    
+   `collision` The device (for example a drone) collided with something.    
+   `manual-off` The device was turned of by a human    
+   `battery-off` The battery failed or is empty    
 ## .step
 ### Step files contain only a Body and a Error section, they cant be run so they have to be called by a mission file in the body or end part.
 `{"run":"example.com/example.steps"}` | `{"run":"example.steps"}`
