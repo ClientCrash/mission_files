@@ -26,7 +26,7 @@
         - battery-low
         - collision-with-obj
         - turned-on
-        - manual-off
+        - manual-off        
     `supported-devices:`
     ` - 'example-robot'`
     ` - 'another example robot'`
