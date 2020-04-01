@@ -10,9 +10,9 @@
 
 
    `HEADER`  
-    `mission:true` This is a mission file
-    `version:1.0.0` Version of the misson file
-    `mf_version:1.0.0` Version of this readme definition
+    `mission:true` This is a mission file     
+    `version:1.0.0` Version of the misson file    
+    `mf_version:1.0.0` Version of this readme definition     
     `name: "Example"`      
     `author: "Example"`     
     `license: "none"`  
