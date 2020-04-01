@@ -1,5 +1,5 @@
 # Mission Files 
-### Version 1.0.0
+### Version 1.1.0
 ## A mission file is a configuration for a robot controlling software , it defines the execution order and additional properties for example waypoints.
 ### The mission file is composed of a header, a body and a end.
 
@@ -12,14 +12,15 @@
    `HEADER`  
     `mission:true` This is a mission file     
     `version:1.0.0` Version of the misson file    
-    `mf_version:1.0.0` Version of this readme definition     
+    `mf_version:1.1.0` Version of this readme definition     
     `name: "Example"`      
     `author: "Example"`     
     `license: "none"`  
     `supported-devices:`    
     ` - 'example-robot'`    
     ` - 'another example robot'`    
-    `type:waypoints`   
+    `type:"waypoints"` 
+    
 #### Example Files for each type are stored in the examples folder. 
     Types :     
       - waypoints | The Body Defines a list of waypoints with speed height longitude and latitude     
@@ -38,6 +39,8 @@
   - `ignorerrors:true` (default : false) The robot ignores all errors in execution
   - `simulate:true`(default : false)  The controlling software executes the mission file in a simulation not on a real device.
   - `devicecheck:false`(default : true) Ignores The supported-devices section of the Header
+  -  `yamlbody:true`(default:false) Activates the not yet supported option to write the Body and the End part in yaml
+  -  `exampleplugin/exampleoption: 1` (default : 0)
 ### Plugins
 #### Plugins are defined in the Header the section is marked with a `PLUGINS` at the start.
     `PLUGINS`
