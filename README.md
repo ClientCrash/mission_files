@@ -12,7 +12,10 @@
     `mission:true`       
     `name: "Example"`      
     `author: "Example"`     
-    `license: "none"`     
+    `license: "none"`  
+    `supported-devices:`    
+    ` - 'example-robot'`    
+    ` - 'another example robot'`    
     `type:waypoints`   
 #### Example Files for each type are stored in the examples folder. 
     Types :     
@@ -27,9 +30,7 @@
 - collision-with-obj
 - turned-on
 - manual-off        
-    `supported-devices:`
-    ` - 'example-robot'`
-    ` - 'another example robot'`
+ 
 #### Optional Header objects are :
   - `ignorerrors:true` (default : false) The robot ignores all errors in execution
   - `simulate:true`(default : false)  The controlling software executes the mission file in a simulation not on a real device.
